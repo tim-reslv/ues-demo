@@ -12,7 +12,7 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "ues.34.96.206.204.nip.io"
+    - "ues-sit-deployment.34.96.206.204.nip.io"
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -20,7 +20,7 @@ metadata:
   name: ues-ingress
 spec:
   hosts:
-  - "ues.34.96.206.204.nip.io"
+  - "ues-sit-deployment.34.96.206.204.nip.io"
   gateways:
   - ues-gateway
   http:
